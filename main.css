@@ -134,6 +134,7 @@ h3 {
   appearance: none;
   height: 56px;
   padding: 0 12px;
+  border-radius: 0;
 }
 .newsletter-form input::placeholder {
 	color: #000;
@@ -165,18 +166,17 @@ h3 {
 	display: block;
 }
 
+.social-title {
+  background-image: linear-gradient(to right,rgb(119 167 255 / 50%),rgb(119 167 255 / 50%));
+	font-size: clamp(22px, 3vw, 28px);
+}
 .social-link {
   color: #2374E1;
   text-decoration: none;
-  background-position: 0 calc(100% - 8px);
-  background-image: linear-gradient(to right,rgb(119 167 255 / 50%),rgb(119 167 255 / 50%));
-  background-size: 100% 8px;
-  background-repeat: no-repeat;
-  display: inline;
 }
 .social-link:hover,
 .social-link:focus {
-  background-image: linear-gradient(to right,#77A7FF,#77A7FF);
+  text-decoration: underline;
 }
 
 .footer {
