@@ -84,6 +84,7 @@ body {
 }
 
 .container {
+	max-width: 1680px;
 	padding: 75px var(--site-padding);
 }
 .container + .container {
@@ -99,6 +100,10 @@ h3 {
   background-image: linear-gradient(to right,var(--color-accent),var(--color-accent));
   background-size: 100% 10px;
   background-repeat: no-repeat;
+	z-index: 9;
+}
+h4 {
+	font-size: 18px;;
 }
 .newsletter-text {
 	display: block;
@@ -185,4 +190,116 @@ h3 {
 }
 .footer span {
 	color: #ff0000;
+}
+
+.benefits {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 50px;
+	align-items: start;
+}
+.benefits h3 {
+	margin-left: 40px;
+}
+.benefits-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	background: #fff7e6;
+	justify-content: start;
+	padding: 80px 40px 120px;
+	margin-top: -20px;
+	clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50px, 100% 100%, 100% 100%, 0 100%);
+	z-index: -1;
+}
+.benefits-list li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.benefits-list span {
+	width: 120px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff300;
+	border-radius: 100%;
+}
+
+css-slider {
+	margin-top: -80px;
+	margin-left: 40px;
+	width: calc(100% - 40px) !important;
+	position: relative;
+	z-index: 9;
+}
+.css-slide {
+	height: 60vh;
+}
+.css-slide:not(:first-child) {
+	margin-left: 20px;
+}
+.css-slide img {
+	transition: all 150ms linear;
+}
+.css-slide img {
+	height: 100%;
+	width: auto;
+}
+.css-slider-dot-navigation {
+	margin-top: 14px !important;
+}
+
+.benefits--right {
+	position: sticky;
+	top: 0;
+	margin-bottom: 140px;
+}
+
+.price {
+	background: aliceblue;
+	margin-top: 25px;
+	padding: 25px 35px;
+}
+.price-title {
+	font-family: Lora, serif;
+	font-size: 60px;    
+}
+.price-title small {
+	position: relative;
+	left: -10px;
+	top: 10px;
+	font-size: 28px;
+	vertical-align: top;
+}
+.price-title span {
+	font-size: 16px;
+	vertical-align: middle;
+}
+.price-content {
+	line-height: 1.6;
+	margin-top: 25px;
+	display: block;
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 50px;;
+}
+.contact h3 {
+	margin-left: 40px;
+}
+.contact-list {
+	list-style: none;
+	display: grid;
+	background: #eeffe6;
+	padding: 80px 40px 120px;
+	margin-top: -20px;
+	clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50px, 100% 100%, 100% 100%, 0 100%);
+	z-index: -1;
 }

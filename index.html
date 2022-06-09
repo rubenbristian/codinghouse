@@ -6,7 +6,6 @@
 	<meta name="description" content="Un loc prietenos și confortabil pentru oameni care vor să lucreze în liniște.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 	<meta property="og:title" content="Coding House - Coworking space in Floresti, Cluj" />
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://codinghouse.ro/">
@@ -21,6 +20,18 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
 
 	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="assets/css-slider.css" />
+
+	<script>
+		const debounce = (fn, wait) => {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), wait);
+  };
+}
+	window.preloadImages = element => {}</script>
+	<script src="assets/css-slider.js" defer></script>
 
 </head>
 
@@ -50,6 +61,133 @@
 				<h2>Un loc prietenos și confortabil pentru oameni care vor să lucreze în liniște.</h2>
 				<span>În curând în Florești (Cluj).</span>
 			</div>
+
+		</div>
+
+		<div id="contact" class="container">
+
+			<h3>Unde ne gasesti</h3>
+
+			<div class="contact">
+				<div class="contact-list">
+					<div class="contact-frame">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2199.6436837720053!2d23.51358303069997!3d46.74047204197103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474911d282927d79%3A0x80049c196fd285d2!2sFlore%C8%99ti%20407280!5e1!3m2!1sro!2sro!4v1654749154322!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					</div>
+			</div>
+			
+		</div>
+
+		<div id="benefits" class="container">
+
+			<div class="benefits">
+
+				<div class="benefits--left">
+
+					<h3>Ce oferim</h3>
+
+					<ul class="benefits-list">
+						<li>
+							<span><img src="icons/acces-nelimitat.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Acces nelimitat</h4>
+						</li>
+						<li>
+							<span><img src="icons/internet-mare-viteza.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Internet viteză</h4>
+						</li>
+						<li>
+							<span><img src="icons/facilitati-imprimare.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Facilități printare</h4>
+						</li>
+						<li>
+							<span><img src="icons/birou-dedicat.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Birou dedicat</h4>
+						</li>
+						<li>
+							<span><img src="icons/scaun-ergonomic.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Scaun ergonomic</h4>
+						</li>
+						<li>
+							<span><img src="icons/spatiu-depozitare.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Spatiu depozitare</h4>
+						</li>
+						<li>
+							<span><img src="icons/sala-call.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Cameră de call-uri</h4>
+						</li>
+						<li>
+							<span><img src="icons/bucatarie-echipata.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Bucătărie echipată</h4>
+						</li>
+						<li>
+							<span><img src="icons/cafea-inclusa.svg" width="64" height="64" alt="Acces nelimitat" /></span>
+							<h4>Cafea &amp; ceai incluse</h4>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="benefits--right">
+					<div class="price">
+						<span class="price-title">€119 <small>*</small><span>+TVA</span></span>
+						<span class="price-content">* Abonament lunar cu access 24/7, toate beneficile și facilitățile incluse.</span>
+					</div>
+				</div>
+
+			</div>
+
+			<css-slider data-options='{
+				"navigation": false
+			}'>
+				<div class="css-slide css-slide--snap" data-index="0">
+					<img src="images/coding-house_0_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_0_480.jpg 480w, images/coding-house_0_640.jpg 640w, images/coding-house_0_820.jpg 820w, images/coding-house_0_1080.jpg 1080w, images/coding-house_0_1360.jpg 1360w, images/coding-house_0_1640.jpg 1640w, images/coding-house_0_1920.jpg 1920w"
+						width="1920" height="2880" sizes="calc(60vh * 0.6666)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="1">
+					<img src="images/coding-house_1_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_1_480.jpg 480w, images/coding-house_1_640.jpg 640w, images/coding-house_1_820.jpg 820w, images/coding-house_1_1080.jpg 1080w, images/coding-house_1_1360.jpg 1360w, images/coding-house_1_1640.jpg 1640w, images/coding-house_1_1920.jpg 1920w"
+						width="1920" height="1280" sizes="calc(60vh * 1.5)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="2">
+					<img src="images/coding-house_2_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_2_480.jpg 480w, images/coding-house_2_640.jpg 640w, images/coding-house_2_820.jpg 820w, images/coding-house_2_1080.jpg 1080w, images/coding-house_2_1360.jpg 1360w, images/coding-house_2_1640.jpg 1640w, images/coding-house_2_1920.jpg 1920w"
+						width="1920" height="1280" sizes="calc(60vh * 1.5)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="3">
+					<img src="images/coding-house_3_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_3_480.jpg 480w, images/coding-house_3_640.jpg 640w, images/coding-house_3_820.jpg 820w, images/coding-house_3_1080.jpg 1080w, images/coding-house_3_1360.jpg 1360w, images/coding-house_3_1640.jpg 1640w, images/coding-house_3_1920.jpg 1920w"
+						width="1920" height="1280" sizes="calc(60vh * 1.5)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="4">
+					<img src="images/coding-house_4_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_4_480.jpg 480w, images/coding-house_4_640.jpg 640w, images/coding-house_4_820.jpg 820w, images/coding-house_4_1080.jpg 1080w, images/coding-house_4_1360.jpg 1360w, images/coding-house_4_1640.jpg 1640w, images/coding-house_4_1920.jpg 1920w"
+						width="1920" height="2880" sizes="calc(60vh * 0.6666)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="5">
+					<img src="images/coding-house_5_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_5_480.jpg 480w, images/coding-house_5_640.jpg 640w, images/coding-house_5_820.jpg 820w, images/coding-house_5_1080.jpg 1080w, images/coding-house_5_1360.jpg 1360w, images/coding-house_5_1640.jpg 1640w, images/coding-house_5_1920.jpg 1920w"
+						width="1920" height="1280" sizes="calc(60vh * 1.5)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="6">
+					<img src="images/coding-house_6_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_6_480.jpg 480w, images/coding-house_6_640.jpg 640w, images/coding-house_6_820.jpg 820w, images/coding-house_6_1080.jpg 1080w, images/coding-house_6_1360.jpg 1360w, images/coding-house_6_1640.jpg 1640w, images/coding-house_6_1920.jpg 1920w"
+						width="1920" height="2880" sizes="calc(60vh * 0.6666)" loading="lazy"	
+					/>
+				</div>
+				<div class="css-slide css-slide--snap" data-index="7">
+					<img src="images/coding-house_7_480.jpg" alt="Coding House - Spatiu Coworking Cluj"
+						srcset="images/coding-house_7_480.jpg 480w, images/coding-house_7_640.jpg 640w, images/coding-house_7_820.jpg 820w, images/coding-house_7_1080.jpg 1080w, images/coding-house_7_1360.jpg 1360w, images/coding-house_7_1640.jpg 1640w, images/coding-house_7_1920.jpg 1920w"
+						width="1920" height="1280" sizes="calc(60vh * 1.5)" loading="lazy"	
+					/>
+				</div>
+			</css-slider>
 
 		</div>
 
