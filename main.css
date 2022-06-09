@@ -171,19 +171,6 @@ h4 {
 	display: block;
 }
 
-.social-title {
-  background-image: linear-gradient(to right,rgb(119 167 255 / 50%),rgb(119 167 255 / 50%));
-	font-size: clamp(22px, 3vw, 28px);
-}
-.social-link {
-  color: #2374E1;
-  text-decoration: none;
-}
-.social-link:hover,
-.social-link:focus {
-  text-decoration: underline;
-}
-
 .footer {
 	padding: 0 var(--site-padding) 30px;
 	font-size: 14px;
@@ -198,10 +185,8 @@ h4 {
 	gap: 50px;
 	align-items: start;
 }
-.benefits h3 {
-	margin-left: 40px;
-}
 .benefits-list {
+	margin-left: -40px;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -261,7 +246,7 @@ css-slider {
 }
 
 .price {
-	background: aliceblue;
+	background: #e6f5ff;
 	margin-top: 25px;
 	padding: 25px 35px;
 }
@@ -286,20 +271,99 @@ css-slider {
 	display: block;
 }
 
-.contact {
+.contact-list {
+	margin-left: -40px;
+	list-style: none;
+	display: grid;
+	background: #e6f5ff;
+	padding: 80px 40px 0;
+	margin-top: -20px;
+	clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50px, 100% 100%, 100% 100%, 0 100%);
+	z-index: -1;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-gap: 50px;;
 }
-.contact h3 {
-	margin-left: 40px;
+.contact-frame {
+	width: 100%;
+	height: 0;
+	padding-top: 65%;
+	position: relative;
 }
-.contact-list {
-	list-style: none;
-	display: grid;
-	background: #eeffe6;
-	padding: 80px 40px 120px;
-	margin-top: -20px;
-	clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50px, 100% 100%, 100% 100%, 0 100%);
-	z-index: -1;
+.contact-frame iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.contact-details {
+	margin-top: 40px;
+}
+.contact-details a {
+	color: blue;
+	margin-top: 12px;
+	display: block;
+}
+.contact-icons {
+	display: flex;
+	margin-top: 30px;
+}
+.contact-icons a {
+	width: 64px;
+}
+.contact-icons img {
+	width: 100%;
+	height: auto;
+}
+
+@media all and (max-width: 968px) {
+	.benefits {
+		grid-template-columns: 1fr;
+	}
+	.benefits-list span {
+		width: 100px;
+		height: 100px;
+	}
+	.price {
+		margin-top: -120px;
+	}
+	css-slider {
+    margin-top: -80px;
+    margin-left: 0px;
+    width: calc(100% + 30px) !important;
+	}
+	.contact-list {
+		grid-template-columns: 1fr;
+	}
+	.contact-details {
+		margin-top: 0;
+		margin-bottom: 40px;;
+	}
+	.contact-frame {
+    width: calc(100% + 40px);
+	}
+}
+
+@media all and (max-width: 640px) {
+	main {
+		overflow: hidden;
+	}
+	.benefits-list {
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
+	.benefits-list li:first-child {
+    grid-column: span 2;
+	}
+	css-slider {
+    margin-left: -30px;
+    width: calc(100% + 60px) !important;
+	}
+	.css-slide:not(:first-child) {
+		margin-left: 12px;
+	}
+	.contact-list {
+		width: calc(100% + 70px);
+	}
 }
