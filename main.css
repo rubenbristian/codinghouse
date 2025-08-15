@@ -20,7 +20,7 @@ body {
 
 .hero-header {
 	width: 100%;
-	height: clamp(360px, 75vh, 1080px);
+	height: 100vh;
 	position: relative;
 }
 .hero-header:before {
